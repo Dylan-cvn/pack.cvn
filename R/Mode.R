@@ -12,8 +12,7 @@ Mode <- function(x, na_rm = TRUE, ties = c("all","first","random")) {
   modes <- names(tb)[tb == max(tb)]
   modes <- type.convert(modes, as.is = TRUE)
   switch(ties,
-    all    = modes,
-    first  = modes[[1]],
-    random = sample(modes, 1)
-  )
+         all    = modes,
+         first  = modes[[1]],
+         random = sample(modes, 1))
 }
