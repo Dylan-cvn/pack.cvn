@@ -17,3 +17,4 @@ LazyData: true
 RoxygenNote: 7.3.3
 URL: https://github.com/Dylan-cvn/pack.cvn
 BugReports: https://github.com/Dylan-cvn/pack.cvn/issues
+Roxygen: list(markdown = TRUE)
