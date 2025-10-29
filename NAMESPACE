@@ -1,1 +1,4 @@
+export(Ordre)
+export(frequence)
 export(Mode)
+export(Moyenne)
