@@ -1,20 +1,27 @@
 Package: pack.cvn
 Type: Package
+<<<<<<< HEAD
 Title: What the Package Does (Title Case)
 Version: 0.2.0
+=======
+Title: Fonctions utilitaires de Dylan-cvn
+Version: 0.2.1
+>>>>>>> e62c3a37abe487603613f6c5e05905fcfe3c6140
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
+        "Dylan", "cvn",
+        email = "dylan@example.com",
+        role = c("aut", "cre")
     )
-  )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+)
+Description: Petit ensemble de fonctions utilitaires en R, 
+    incluant la fonction Ordre() qui étend les capacités de tri 
+    de base::sort(), ainsi que d'autres outils statistiques simples.
+License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
+Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
 URL: https://github.com/Dylan-cvn/pack.cvn
 BugReports: https://github.com/Dylan-cvn/pack.cvn/issues
 Roxygen: list(markdown = TRUE)

@@ -9,22 +9,22 @@ frequence(x, cell = NULL, na_rm = TRUE, as_percent = FALSE, digits = 3)
 \arguments{
 \item{x}{Vecteur (factor/character/numeric) représentant la variable.}
 
-\item{cell}{Modalité à extraire (par **nom** comme "Technicien" ou par
-**indice** 1, 2, 3, ...). Si `NULL`, renvoie la table complète.}
+\item{cell}{Modalité à extraire (par \strong{nom} comme "Technicien" ou par
+\strong{indice} 1, 2, 3, ...). Si \code{NULL}, renvoie la table complète.}
 
-\item{na_rm}{Logique. `TRUE` pour ignorer les NA (défaut). Si `FALSE`,
+\item{na_rm}{Logique. \code{TRUE} pour ignorer les NA (défaut). Si \code{FALSE},
 une modalité "NA" sera ajoutée si nécessaire.}
 
-\item{as_percent}{Logique. Si `TRUE`, les colonnes `freq` et `freq_cum`
-sont exprimées en pourcentage (0–100). Défaut `FALSE`.}
+\item{as_percent}{Logique. Si \code{TRUE}, les colonnes \code{freq} et \code{freq_cum}
+sont exprimées en pourcentage (0–100). Défaut \code{FALSE}.}
 
-\item{digits}{Entier. Nombre de décimales à afficher quand `as_percent = TRUE`.
-Défaut `3`.}
+\item{digits}{Entier. Nombre de décimales à afficher quand \code{as_percent = TRUE}.
+Défaut \code{3}.}
 }
 \value{
-Un `data.frame` avec les colonnes :
-  `modalite`, `n` (effectif), `freq` (fréquence relative),
-  `freq_cum` (fréquence relative cumulée).
+Un \code{data.frame} avec les colonnes :
+\code{modalite}, \code{n} (effectif), \code{freq} (fréquence relative),
+\code{freq_cum} (fréquence relative cumulée).
 }
 \description{
 Calcule l'effectif, la fréquence relative et la fréquence relative cumulée.

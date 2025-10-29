@@ -16,4 +16,7 @@ Mode <- function(x, na_rm = TRUE, ties = c("all","first","random")) {
          first  = modes[[1]],
          random = sample(modes, 1))
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> e62c3a37abe487603613f6c5e05905fcfe3c6140
