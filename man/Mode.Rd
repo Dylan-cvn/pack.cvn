@@ -7,15 +7,20 @@
 Mode(x, na_rm = TRUE, ties = c("all", "first", "random"))
 }
 \arguments{
-\item{x}{vecteur}
+\item{x}{vecteur.}
 
-\item{na_rm}{TRUE pour ignorer les NA}
+\item{na_rm}{TRUE pour ignorer les NA.}
 
-\item{ties}{"all","first","random"}
+\item{ties}{Stratégie en cas d'ex æquo : \code{"all"}, \code{"first"}, ou \code{"random"}.}
 }
 \value{
-valeur(s) modale(s)
+La/les valeur(s) modale(s) (même type que \code{x}).
 }
 \description{
-Mode statistique
+Calcule la/les valeur(s) modale(s) d'un vecteur.
+}
+\examples{
+Mode(c(1, 2, 2, 3))                # 2
+Mode(c(1, 1, 2, 2), ties = "all")  # c(1, 2)
+Mode(c("a", "b", "b", "a"), ties = "first")  # "a"
 }

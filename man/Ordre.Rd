@@ -2,30 +2,31 @@
 % Please edit documentation in R/Ordre.R
 \name{Ordre}
 \alias{Ordre}
-\title{Ordre (équivalent de sort)}
+\title{Trier un vecteur (équivalent de \code{sort})}
 \usage{
 Ordre(x, decreasing = FALSE, na.last = NA, partial = NULL, ...)
 }
 \arguments{
 \item{x}{Vecteur à trier.}
 
-\item{decreasing}{Logique; tri décroissant ? (FALSE par défaut)}
+\item{decreasing}{Logique : tri décroissant ? (FALSE par défaut)}
 
-\item{na.last}{NA/TRUE/FALSE : où placer les NA.}
+\item{na.last}{NA/TRUE/FALSE : où placer les valeurs manquantes.}
 
 \item{partial}{Entier(s) pour tri partiel (comme dans \code{sort()}).}
 
-\item{...}{Autres arguments passés à \code{sort()}.}
+\item{...}{Autres arguments passés à \code{base::sort()}.}
 }
 \value{
 Le vecteur trié.
 }
 \description{
-Trie un vecteur comme \code{base::sort}.
-Permet \code{Ordre(x)[k]} pour obtenir la k-ième statistique d'ordre.
+\code{Ordre()} trie un vecteur comme \code{base::sort()}.
+Tu peux faire \code{Ordre(x)[k]} pour obtenir la k-ième statistique d'ordre.
 }
 \examples{
 x <- c(5, 2, 9, 1)
-Ordre(x)        # 1 2 5 9
-Ordre(x)[3]     # 5
+Ordre(x)      # 1 2 5 9
+Ordre(x)[3]   # 5
+
 }

@@ -1,5 +1,4 @@
 #' Arrondit des valeurs numériques
-#'
 #' Enveloppe simple autour de `base::round()`.
 #'
 #' @param x Un vecteur (ou matrice) numérique.
@@ -8,7 +7,7 @@
 #' @return Un objet du même type que `x`, avec les valeurs arrondies.
 #'
 #' @details
-#' Utilise l'arrondi “vers le pair” (banker's rounding) de R.
+#' Utilise l'arrondi "vers le pair" (banker's rounding) de R.
 #' Pour éviter tout conflit, on appelle explicitement `base::round()`.
 #'
 #' @examples

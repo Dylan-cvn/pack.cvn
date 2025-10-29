@@ -9,11 +9,15 @@ Moyenne(x, ...)
 \arguments{
 \item{x}{Vecteur numérique.}
 
-\item{...}{Passé à base::mean (ex. na.rm = TRUE).}
+\item{...}{Arguments additionnels passés à \code{\link[base:mean]{base::mean()}}, par ex. \code{na.rm = TRUE}.}
 }
 \value{
 Un scalaire numérique (la moyenne).
 }
 \description{
-Moyenne (équivalent de mean)
+Calcule la moyenne d'un vecteur numérique.
+}
+\examples{
+Moyenne(c(1, 2, 3))
+Moyenne(c(1, NA, 3), na.rm = TRUE)
 }
