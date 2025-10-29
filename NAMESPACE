@@ -3,5 +3,6 @@
 export(Arrondit)
 export(Mode)
 export(Moyenne)
+export(MoyenneParCategorie)
 export(Ordre)
 export(frequence)
