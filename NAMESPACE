@@ -1,5 +1,5 @@
-export(Ordre)
-export(frequence)
 export(Mode)
 export(Moyenne)
+export(Ordre)
+export(frequence)
 export(Arrondit)
